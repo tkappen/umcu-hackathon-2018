@@ -24,6 +24,7 @@ import {BrokerService} from "../providers/broker-service-mock";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { DetailPage } from '../pages/detailpage/detailpage';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     PropertyDetailPage,
     FavoriteListPage,
     BrokerListPage,
-    BrokerDetailPage
+    BrokerDetailPage,
+    DetailPage,
   ],
   imports: [
     BrowserModule,
@@ -62,7 +64,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     PropertyDetailPage,
     FavoriteListPage,
     BrokerListPage,
-    BrokerDetailPage
+    BrokerDetailPage,
+    DetailPage,
   ],
   providers: [
     StatusBar,

@@ -13,6 +13,7 @@ import {OrganPage} from '../pages/organ/organ';
 import {TreatmentPage} from '../pages/treatment/treatment';
 import {AdvicePage} from '../pages/advice/advice';
 import {AboutPage} from '../pages/about/about';
+import {DetailPage} from '../pages/detailpage/detailpage';
 
 export interface MenuItem {
     title: string;
@@ -26,7 +27,7 @@ export interface MenuItem {
 export class MyApp {
     @ViewChild(Nav) nav: Nav;
 
-    rootPage: any = StatusPage;
+    rootPage: any = WelcomePage;
 
     appMenuItems: Array<MenuItem>;
 
@@ -42,8 +43,9 @@ export class MyApp {
         this.appMenuItems = [
             {title: 'Mijn opname', component: GeneralPage, icon: 'person'},
             {title: 'Status', component: StatusPage, icon: 'pulse'},
-            {title: 'Behandelingen', component: TreatmentPage, icon: 'medkit'},
-            {title: 'Adviezen', component: AdvicePage, icon: 'text'},
+            // {title: 'Detail', component: DetailPage, icon: 'medkit'},
+            {title: 'Behandelingen', component: PropertyListPage, icon: 'medkit'},
+            {title: 'Adviezen', component: PropertyListPage, icon: 'text'},
         ];
 
         this.backupMenuItems = [
